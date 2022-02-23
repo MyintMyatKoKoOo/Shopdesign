@@ -2,8 +2,86 @@ $(document).ready(function() {
     scrollchg();
     loginregister();
     search();
-});
 
+    
+});
+function mbpasshow1(tar){
+    if($(tar).prop("checked") == true){
+        $("#inputgroup__pass1").attr("type","text");
+    }
+    else{
+        $("#inputgroup__pass1").attr("type","password");
+    }
+}
+function mbpasshow2(tar){
+    if($(tar).prop("checked") == true){
+        $("#inputgroup__pass2").attr("type","text");
+    }
+    else{
+        $("#inputgroup__pass2").attr("type","password");
+    }
+}
+function mbpasshow3(tar){
+    if($(tar).prop("checked") == true){
+        $("#inputgroup__pass3").attr("type","text");
+    }
+    else{
+        $("#inputgroup__pass3").attr("type","password");
+    }
+}
+function mbpasshow4(tar){
+    if($(tar).prop("checked") == true){
+        $("#inputgroup__pass4").attr("type","text");
+    }
+    else{
+        $("#inputgroup__pass4").attr("type","password");
+    }
+}
+    // $("#inputgroup__passwarp>input").keyup(function(){
+    //    if($("#inputgroup__passwarp>input").val() != ""){
+    //        $("#inputgroup__passwarp #inputgroup__passicon").css("visibility","visible");
+           
+    //    }else{
+    //        $("#inputgroup__passwarp #inputgroup__passicon").css("visibility","hidden");
+       
+    //    }
+    // });
+    // $("#inputgroup__passicon").click(function(){
+        
+    //     if($("#inputgroup__passwarp>input").attr("type")==="password"){
+    //         $("#inputgroup__passwarp>input").attr("type","text");
+    //         $("#inputgroup__passwarp #inputgroup__passicon").html("<i class='far fa-eye'></i>");
+          
+    //     }else{
+    //         $("#inputgroup__passwarp>input").attr("type","password");
+    //         $("#inputgroup__passwarp #inputgroup__passicon").html("<i class='far fa-eye-slash'></i>");
+ 
+    //     }
+     
+    // });
+    //    $("#inputgroup__passwarp1>input").keyup(function(){
+    //    if($("#inputgroup__passwarp1>input").val() != ""){
+    //        $("#inputgroup__passwarp1 #inputgroup__passicon1").css("visibility","visible");
+           
+    //    }else{
+    //        $("#inputgroup__passwarp1 #inputgroup__passicon1").css("visibility","hidden");
+       
+    //    }
+    // });
+    // $("#inputgroup__passicon1").click(function(){
+        
+    //     if($("#inputgroup__passwarp1>input").attr("type")==="password"){
+    //         $("#inputgroup__passwarp1>input").attr("type","text");
+    //         $("#inputgroup__passwarp1 #inputgroup__passicon1").html("<i class='far fa-eye'></i>");
+          
+    //     }else{
+    //         $("#inputgroup__passwarp1>input").attr("type","password");
+    //         $("#inputgroup__passwarp1 #inputgroup__passicon1").html("<i class='far fa-eye-slash'></i>");
+ 
+    //     }
+     
+    // });
+    
 function scrollchg() {
     $(window).scroll(function() {
         if ($(this).scrollTop()) {
@@ -63,7 +141,7 @@ function search() {
 function loginregister() {
     if ($("#lrsys_btn").length) {
         $("#lrsys_btn").click(function() {
-            if ($("#lrsys_btn").text() == "Sing In") {
+            if ($("#lrsys_btn").text() == "Sign In") {
                 $("#lrsys__wrap").css({
                     "margin-left": "568px"
                 });
@@ -72,7 +150,7 @@ function loginregister() {
                 $("#lrsys__wrap").css({
                     "margin-left": "0px"
                 });
-                $("#lrsys_btn").text("Sing In");
+                $("#lrsys_btn").text("Sign In");
             }
 
         });
